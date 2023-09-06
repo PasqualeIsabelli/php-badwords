@@ -1,9 +1,9 @@
 <?php
-// Variabili
-$title = "PHP BadWords";
-$badword = "Scrivi una parola da censurare";
-$paragraph = "Scrivi un paragrafo"
+
+//Variabili
+$title = "PHP Bad Words";
 ?>
+
 
 <!DOCTYPE html>
 <html lang="it">
@@ -23,16 +23,16 @@ $paragraph = "Scrivi un paragrafo"
 
     <h1 class="text-center fw-bold"><?php echo $title ?></h1>
 
-    <form action="new_page.php" method="POST">
+    <form action="./new_page.php" method="POST">
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"><?php echo $badword ?></label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+        <label for="badword" class="form-label">Scrivi la parola da censurare nel paragrafo</label>
+        <input type="text" class="form-control" name="badword">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label"><?php echo $paragraph ?></label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <label for="paragraph" class="form-label">Scrivi un paragrafo</label>
+        <textarea class="form-control" name="paragraph"></textarea>
       </div>
-      <button type="button" class="btn btn-primary">Invia</button>
+      <button type="submit" class="btn btn-primary">Invia</button>
     </form>
   </div>
 
