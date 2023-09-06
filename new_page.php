@@ -28,12 +28,12 @@ $censoredParagraph = str_replace($badword, "***", $paragraph)
     <h1 class="text-center fw-bold"><?php echo $title ?></h1>
 
     <h3 class="fw-bold">Questo è il paragrafo senza censura:</h3>
-    <p class="text-center p-3"> <?php echo $paragraph ?> </p>
-    <h4 class="fw-bold">La sua lunghezza è di:</h4> <span class="fw-bold"> <?php echo $paragraphlength ?> </span>
+    <p class="text-center fs-1 p-3"> <?php echo $paragraph ?> </p>
+    <h4 class="fw-bold d-inline-block mt-1">La sua lunghezza è di:</h4> <span class="fw-bold text-danger fs-3"> <?php echo $paragraphlength ?> </span>
 
-    <h3 class="fw-bold">Questo è il paragrafo con censura:</h3>
-    <p class="text-center p-3"> <?php echo $censoredParagraph ?> </p>
-    <h4 class="fw-bold">La parola censurata è:</h4> <span class="fw-bold"><?php echo $badword ?></span>
+    <h3 class="fw-bold mt-5">Questo è il paragrafo con censura:</h3>
+    <p class="text-center fs-1 p-3"> <?php echo $censoredParagraph ?> </p>
+    <h4 class="fw-bold d-inline-block mt-1">La parola censurata è:</h4> <span class="fw-bold text-danger fs-3"> <?php echo $badword ?></span>
 
   </div>
 
